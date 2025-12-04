@@ -1,4 +1,4 @@
-//k=l + m * 3 ifadesinin görüntüsü
+//k=l + m * 3 ifadesinin gÃ¶rÃ¼ntÃ¼sÃ¼
 //
 //    =
 //  /   \
@@ -22,7 +22,7 @@ struct Dugum* yeniDugumOlustur(char *deger){
 	struct Dugum* dugum = (struct Dugum*)malloc(sizeof(struct Dugum));
 	
 	if(dugum == NULL){
-		perror("Bellek ayırma başarısız");
+		perror("Bellek ayÃ½rma baÃ¾arÃ½sÃ½z");
 		exit(EXIT_FAILURE);
 	}
 	
