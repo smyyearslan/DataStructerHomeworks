@@ -17,7 +17,7 @@ typedef struct Graph {
 AdjListNode* newAdjListNode(int dest) {
     AdjListNode* newNode = (AdjListNode*)malloc(sizeof(AdjListNode));
     if (newNode == NULL) {
-        perror("Bellek ayırma hatası");
+        perror("Bellek ayÃ½rma hatasÃ½");
         exit(EXIT_FAILURE);
     }
     newNode->dest = dest;
@@ -64,12 +64,12 @@ void findConnectedComponents(Graph* graph) {
     for (int i = 0; i < graph->V; i++) {
         if (graph->visited[i] == 0) {
             component_count++;
-            printf("\n--- Bileşen %d (Düğüm %d'den Başladı) ---\n", component_count, i);
+            printf("\n--- BileÃ¾en %d (DÃ¼Ã°Ã¼m %d'den BaÃ¾ladÃ½) ---\n", component_count, i);
             
             DFS(graph, i);
         }
     }
-    printf("\n\nToplam Bağlantılı Bileşen Sayısı: %d\n", component_count);
+    printf("\n\nToplam BaÃ°lantÃ½lÃ½ BileÃ¾en SayÃ½sÃ½: %d\n", component_count);
 }
 
 void destroyGraph(Graph* graph) {
@@ -104,7 +104,7 @@ int main() {
     addEdge(&graph, 7, 8); // V8-V9
     
 
-    printf("--- Graf Bağlantılı Bileşen Arama (DFS Kullanarak) ---\n");
+    printf("--- Graf BaÃ°lantÃ½lÃ½ BileÃ¾en Arama (DFS Kullanarak) ---\n");
     
     findConnectedComponents(&graph);
     
