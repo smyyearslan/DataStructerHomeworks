@@ -1,2 +1,3 @@
+Sümeyye Arslan 
+2310206021
 # DataStructerHomeworks
-Data Structer dersi için Dev-c++ ile yazdığım C kodlarım
